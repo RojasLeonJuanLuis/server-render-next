@@ -1,4 +1,4 @@
-const Index = ({ title: 'Hello from Next.js' }) => (
+const Index = ({ title = 'Hello from Next.js' }) => (
   <div>
     <h1>{title}</h1>
   </div>
