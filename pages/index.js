@@ -22,6 +22,6 @@ const Index = ({ posts }) =>
 Index.getInitialProps = async () => {
   const response = await fetch(`${process.env.BLOGGER_URL}?key=${process.env.API_KEY}`)
   const data = await response.json()
-  return { posts: data.item }
+  return { posts: data.items }
 }
 export default withMui(Index)
