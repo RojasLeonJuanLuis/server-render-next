@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import getMuiTheme from 'material-ui-styles/getMuiTheme'
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import Head from 'next/head'
 import {
@@ -22,12 +22,12 @@ const withMaterialUI = ComposedComponent => {
   class HOC extends Component {
 
     static async getInitialProps(ctx) {
-      const { req } ) ctx
+      const { req } = ctx
       const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
-      const subProps = await ComposedComponent.getInitialProps(ctx)
+      // const subProps = await ComposedComponent.getInitialProps(ctx)
 
       return {
-        ...subProps,
+        // ...subProps,
         userAgent
       }
     }
@@ -39,7 +39,7 @@ const withMaterialUI = ComposedComponent => {
         palette: {
           primary1Color: PRIMARY_COLOR,
           primary2Color: PRIMARY_COLOR_TWO,
-          primary3Color: THREE,
+          primary3Color: PRIMARY_COLOR_THREE,
           accent1Color: ACCENT_COLOR_ONE,
           accent2Color: ACCENT_COLOR_TWO,
           accent3Color: ACCENT_COLOR_THREE,

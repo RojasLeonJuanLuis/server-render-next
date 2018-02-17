@@ -1,166 +1,49 @@
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		var threw = true;
-/******/ 		try {
-/******/ 			modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 			threw = false;
-/******/ 		} finally {
-/******/ 			if(threw) delete installedModules[moduleId];
-/******/ 		}
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ "./components/header.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_material_ui_AppBar__ = __webpack_require__("material-ui/AppBar");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_material_ui_AppBar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_material_ui_AppBar__);
-var _jsxFileName = '/Users/rojas/Desktop/server-render-next/components/header.js';
-
-
-
-var Header = function Header(_ref) {
-  var _ref$title = _ref.title,
-      title = _ref$title === undefined ? 'Next.js blogging application' : _ref$title;
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_material_ui_AppBar___default.a, { title: title, showMenuIconButton: false, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    }
-  });
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Header);
-
-/***/ }),
-
-/***/ "./pages/index.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_header__ = __webpack_require__("./components/header.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_MUI_withMUI__ = __webpack_require__("./shared/MUI/withMUI.js");
-var _jsxFileName = '/Users/rojas/Desktop/server-render-next/pages/index.js';
-
-
-
-
-var Index = function Index(_ref) {
-  var _ref$title = _ref.title,
-      title = _ref$title === undefined ? 'Hello from Next.js' : _ref$title;
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'div',
-    {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 5
-      }
-    },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'h1',
-      {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 6
-        }
-      },
-      title
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_header__["a" /* default */], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7
-      }
-    })
-  );
-};
-/* harmony default export */ __webpack_exports__["default"] = (Object(__WEBPACK_IMPORTED_MODULE_2__shared_MUI_withMUI__["a" /* default */])(Index));
-
-/***/ }),
+webpackHotUpdate(4,{
 
 /***/ "./shared/MUI/theme.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return PRIMARY_COLOR; });
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return PRIMARY_COLOR; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return PRIMARY_COLOR_TWO; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return PRIMARY_COLOR_THREE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ACCENT_COLOR_ONE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return ACCENT_COLOR_TWO; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ACCENT_COLOR_THREE; });
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
 var PRIMARY_COLOR = '#569cb7';
 var PRIMARY_COLOR_TWO = '#88cde9';
 var PRIMARY_COLOR_THREE = '#1e6e87';
 var ACCENT_COLOR_ONE = '#556cb7';
 var ACCENT_COLOR_TWO = '#889aea';
 var ACCENT_COLOR_THREE = '#204287';
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(PRIMARY_COLOR, 'PRIMARY_COLOR', '/Users/rojas/Desktop/server-render-next/shared/MUI/theme.js');
+  reactHotLoader.register(PRIMARY_COLOR_TWO, 'PRIMARY_COLOR_TWO', '/Users/rojas/Desktop/server-render-next/shared/MUI/theme.js');
+  reactHotLoader.register(PRIMARY_COLOR_THREE, 'PRIMARY_COLOR_THREE', '/Users/rojas/Desktop/server-render-next/shared/MUI/theme.js');
+  reactHotLoader.register(ACCENT_COLOR_ONE, 'ACCENT_COLOR_ONE', '/Users/rojas/Desktop/server-render-next/shared/MUI/theme.js');
+  reactHotLoader.register(ACCENT_COLOR_TWO, 'ACCENT_COLOR_TWO', '/Users/rojas/Desktop/server-render-next/shared/MUI/theme.js');
+  reactHotLoader.register(ACCENT_COLOR_THREE, 'ACCENT_COLOR_THREE', '/Users/rojas/Desktop/server-render-next/shared/MUI/theme.js');
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -168,17 +51,17 @@ var ACCENT_COLOR_THREE = '#204287';
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__("babel-runtime/regenerator");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__("./node_modules/babel-runtime/regenerator/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_material_ui_styles_MuiThemeProvider__ = __webpack_require__("material-ui/styles/MuiThemeProvider");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_material_ui_styles_MuiThemeProvider__ = __webpack_require__("./node_modules/material-ui/styles/MuiThemeProvider.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_material_ui_styles_MuiThemeProvider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_material_ui_styles_MuiThemeProvider__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_material_ui_styles_getMuiTheme__ = __webpack_require__("material-ui/styles/getMuiTheme");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_material_ui_styles_getMuiTheme__ = __webpack_require__("./node_modules/material-ui/styles/getMuiTheme.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_material_ui_styles_getMuiTheme___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_material_ui_styles_getMuiTheme__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_tap_event_plugin__ = __webpack_require__("react-tap-event-plugin");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_tap_event_plugin__ = __webpack_require__("./node_modules/react-tap-event-plugin/src/injectTapEventPlugin.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_tap_event_plugin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_tap_event_plugin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_next_head__ = __webpack_require__("next/head");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_next_head__ = __webpack_require__("./node_modules/next/head.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_next_head__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__theme__ = __webpack_require__("./shared/MUI/theme.js");
 
@@ -188,6 +71,12 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 var _jsxFileName = '/Users/rojas/Desktop/server-render-next/shared/MUI/withMUI.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
@@ -291,6 +180,11 @@ var withMaterialUI = function withMaterialUI(ComposedComponent) {
           )
         );
       }
+    }, {
+      key: '__reactstandin__regenerateByEval',
+      value: function __reactstandin__regenerateByEval(key, code) {
+        this[key] = eval(code);
+      }
     }], [{
       key: 'getInitialProps',
       value: function () {
@@ -330,66 +224,28 @@ var withMaterialUI = function withMaterialUI(ComposedComponent) {
 
   return HOC;
 };
-/* harmony default export */ __webpack_exports__["a"] = (withMaterialUI);
+var _default = withMaterialUI;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
 
-/***/ }),
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
 
-/***/ 2:
-/***/ (function(module, exports, __webpack_require__) {
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
 
-module.exports = __webpack_require__("./pages/index.js");
+  if (!reactHotLoader) {
+    return;
+  }
 
+  reactHotLoader.register(withMaterialUI, 'withMaterialUI', '/Users/rojas/Desktop/server-render-next/shared/MUI/withMUI.js');
+  reactHotLoader.register(_default, 'default', '/Users/rojas/Desktop/server-render-next/shared/MUI/withMUI.js');
+  leaveModule(module);
+})();
 
-/***/ }),
-
-/***/ "babel-runtime/regenerator":
-/***/ (function(module, exports) {
-
-module.exports = require("babel-runtime/regenerator");
-
-/***/ }),
-
-/***/ "material-ui/AppBar":
-/***/ (function(module, exports) {
-
-module.exports = require("material-ui/AppBar");
-
-/***/ }),
-
-/***/ "material-ui/styles/MuiThemeProvider":
-/***/ (function(module, exports) {
-
-module.exports = require("material-ui/styles/MuiThemeProvider");
-
-/***/ }),
-
-/***/ "material-ui/styles/getMuiTheme":
-/***/ (function(module, exports) {
-
-module.exports = require("material-ui/styles/getMuiTheme");
-
-/***/ }),
-
-/***/ "next/head":
-/***/ (function(module, exports) {
-
-module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "react":
-/***/ (function(module, exports) {
-
-module.exports = require("react");
-
-/***/ }),
-
-/***/ "react-tap-event-plugin":
-/***/ (function(module, exports) {
-
-module.exports = require("react-tap-event-plugin");
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ })
 
-/******/ });
-//# sourceMappingURL=index.js.map
+})
+//# sourceMappingURL=4.d78e713ac11ae62ad5da.hot-update.js.map
