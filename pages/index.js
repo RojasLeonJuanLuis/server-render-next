@@ -1,3 +1,4 @@
+import React, { Component } from 'react'
 import Header from '../components/header'
 import withMui from '../shared/MUI/withMUI'
 import 'isomorphic-fetch'
@@ -7,9 +8,9 @@ import RaisedButton from 'material-ui/RaisedButton'
 class Index extends Component {
 
   static async getInitialProps() {
-    const response = await fetch(`${process.env.BLOGGER_URL}?key=${process.env.API_KEY}`)
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts`)
     const data = await response.json()
-    return { posts: data.items }
+    return { posts: data }
   }
 
   render() {
@@ -17,7 +18,7 @@ class Index extends Component {
       <div>
         <Header />
         {
-          posts.map(x =>
+          this.props.posts.map(x =>
             <Card key={x.id}>
               <CardHeader title={x.title} />
               <CardText>
